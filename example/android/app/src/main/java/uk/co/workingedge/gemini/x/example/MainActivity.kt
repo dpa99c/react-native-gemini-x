@@ -1,4 +1,4 @@
-package com.geminixexample
+package uk.co.workingedge.gemini.x.example
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

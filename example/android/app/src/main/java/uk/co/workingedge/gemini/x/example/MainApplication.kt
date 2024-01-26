@@ -1,4 +1,4 @@
-package com.geminixexample
+package uk.co.workingedge.gemini.x.example
 
 import android.app.Application
 import com.facebook.react.PackageList

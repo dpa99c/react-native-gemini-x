@@ -1,4 +1,4 @@
-package com.geminix
+package uk.co.workingedge.gemini.x
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
