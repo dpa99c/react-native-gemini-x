@@ -43,7 +43,7 @@
     "type": "git",
     "url": "git+https://github.com/dpa99c/react-native-gemini-x.git"
   },
-  "author": "Dave Alden <dave@workingedge.co.uk> (https://github.com/dpa99c/react-native-gemini-x)",
+  "author": "Dave Alden <dave@workingedge.co.uk> (https://github.com/dpa99c)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dpa99c/react-native-gemini-x/issues"
