@@ -1,0 +1,6 @@
+[submodule "android/src/main/java/uk/co/workingedge/gemini/x/lib"]
+	path = android/src/main/java/uk/co/workingedge/gemini/x/lib
+	url = git@github.com:dpa99c/gemini-x-android.git
+[submodule "ios/lib"]
+	path = ios/lib
+	url = git@github.com:dpa99c/gemini-x-ios.git
