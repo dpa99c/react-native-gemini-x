@@ -90,6 +90,6 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation "com.google.ai.client.generativeai:generativeai:0.1.1"
+  implementation "com.google.ai.client.generativeai:generativeai:0.2.0"
 }
 
