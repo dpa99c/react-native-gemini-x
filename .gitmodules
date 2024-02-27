@@ -4,3 +4,6 @@
 [submodule "ios/lib"]
 	path = ios/lib
 	url = git@github.com:dpa99c/gemini-x-ios.git
+[submodule "src/lib"]
+	path = src/lib
+	url = git@github.com:dpa99c/gemini-x-web.git

@@ -1,5 +1,20 @@
 import { NativeModules, Platform } from 'react-native';
 
+import type {
+  ModelParams,
+  PluginSendMessageOptions,
+  GeminiXResponseChunk,
+  PluginCountTokensOptions,
+  GeminiXResponseCount,
+  PluginChatHistoryItem,
+  PluginCountChatTokensOptions,
+  ModelChatHistoryItem,
+} from './lib/GeminiXTypes';
+
+/**************************************************************************
+ * Internal Constants
+ **************************************************************************/
+
 const LINKING_ERROR =
   `The package 'react-native-gemini-x' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
@@ -17,6 +32,45 @@ const GeminiX = NativeModules.GeminiX
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return GeminiX.multiply(a, b);
+/**************************************************************************
+ * Plugin Methods
+ **************************************************************************/
+export function initModel(params: ModelParams): Promise<void> {
+  return GeminiX.initModel(params);
+}
+
+export function sendMessage(
+  inputText: string,
+  options?: PluginSendMessageOptions
+): Promise<GeminiXResponseChunk> {
+  return GeminiX.sendMessage(inputText, options);
+}
+
+export function countTokens(
+  inputText: string,
+  options?: PluginCountTokensOptions
+): Promise<GeminiXResponseCount> {
+  return GeminiX.countTokens(inputText, options);
+}
+
+export function initChat(chatHistory?: PluginChatHistoryItem[]) {
+  return GeminiX.initChat(chatHistory);
+}
+
+export function sendChatMessage(
+  inputText: string,
+  options?: PluginSendMessageOptions
+): Promise<GeminiXResponseChunk> {
+  return GeminiX.sendChatMessage(inputText, options);
+}
+
+export function countChatTokens(
+  inputText: string,
+  options?: PluginCountChatTokensOptions
+): Promise<GeminiXResponseCount> {
+  return GeminiX.countTokens(inputText, options);
+}
+
+export function getChatHistory(): Promise<ModelChatHistoryItem> {
+  return GeminiX.getChatHistory();
 }
